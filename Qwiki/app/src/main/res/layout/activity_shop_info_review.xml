@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopInfoReview">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Shop Name"
+        android:id="@+id/shopName"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/shopAddress"
+        android:textSize="20dp"
+        android:layout_below="@+id/shopName"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textAlignment="center"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:text="Ph No: 9090909090"
+            android:layout_below="@id/shopAddress"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/shopPhoneNo"
+            android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Place Order"
+                android:layout_below="@+id/shopPhoneNo"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/shopBtn"
+                android:background="#FFD0D0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:id="@+id/reviewText"
+                android:layout_below="@id/shopBtn"
+                android:text="Reviews:"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/reviewText"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewList"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
