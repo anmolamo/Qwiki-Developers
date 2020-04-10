@@ -26,7 +26,7 @@
                 android:layout_centerInParent="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="30dp"
-                android:text="Payement Gateway"
+                android:text="Payement"
                 android:textColor="#000000"
                 android:textSize="30dp"
                 android:textStyle="bold" />
@@ -145,6 +145,15 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="70dp"
                 android:background="@drawable/smallbackwallet" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/smallbackupi" />
+
+
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
