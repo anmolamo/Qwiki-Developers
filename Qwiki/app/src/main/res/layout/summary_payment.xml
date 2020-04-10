@@ -82,6 +82,7 @@
             android:layout_below="@id/addressandchangearea"
             android:layout_marginTop="20dp"
             android:weightSum="100"
+            android:id="@+id/paydeteditbox"
             android:background="@drawable/reviewlistback"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
@@ -152,6 +153,35 @@
                 android:textSize="20dp" />
 
         </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paydeteditbox">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:src="@drawable/paymentsuccess"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/paySuccessOrNot"
+                android:layout_centerInParent="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/paySuccessOrNot"
+                android:text="Rs.2000"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textSize="30dp"/>
+
+
+        </RelativeLayout>
+
 
         <RelativeLayout
             android:layout_width="match_parent"
