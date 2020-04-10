@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:weightSum="100"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:background="@drawable/searchback"
+                android:hint="Search Shops, Stores...."
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="90" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="55dp"
+                android:background="@drawable/searchiconback"
+                android:layout_weight="10" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15.4dp"
+                android:layout_margin="10dp"
+
+                android:layout_marginBottom="60dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="9dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginLeft="15.4dp"
+                        android:text="Shop Name"
+                        android:layout_marginTop="15.4dp"
+                        android:id="@+id/shopNameCard"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:layout_marginRight="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Identical Towers, Identical Wonders. Enjoy and capture the spires…"
+                        android:textColor="#8f8f8f"
+                        android:textSize="20dp" />
+
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="10dp"
+                        android:numStars="5"
+                        android:layout_marginBottom="10dp"
+                        android:rating="4" />
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15.4dp"
+                android:layout_margin="10dp"
+
+                android:layout_marginBottom="60dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="9dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginLeft="15.4dp"
+                        android:text="Shop Name"
+                        android:layout_marginTop="15.4dp"
+                        android:id="@+id/shopNameCard"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:layout_marginRight="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Identical Towers, Identical Wonders. Enjoy and capture the spires…"
+                        android:textColor="#8f8f8f"
+                        android:textSize="20dp" />
+
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="10dp"
+                        android:numStars="5"
+                        android:layout_marginBottom="10dp"
+                        android:rating="4" />
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15.4dp"
+                android:layout_margin="10dp"
+
+                android:layout_marginBottom="60dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="9dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginLeft="15.4dp"
+                        android:text="Shop Name"
+                        android:layout_marginTop="15.4dp"
+                        android:id="@+id/shopNameCard"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:layout_marginRight="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Identical Towers, Identical Wonders. Enjoy and capture the spires…"
+                        android:textColor="#8f8f8f"
+                        android:textSize="20dp" />
+
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="10dp"
+                        android:numStars="5"
+                        android:layout_marginBottom="10dp"
+                        android:rating="4" />
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
