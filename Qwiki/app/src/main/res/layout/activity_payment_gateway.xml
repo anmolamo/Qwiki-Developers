@@ -23,12 +23,23 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:text="Payement"
+                android:layout_marginTop="50dp"
+                android:text="Payment"
+                android:id="@+id/paytext"
                 android:textColor="#000000"
                 android:textSize="30dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/paytext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Rs.1000"
+                android:textColor="#000000"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
 
@@ -72,7 +83,7 @@
                 android:layout_below="@id/nameOncard"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:text="Name On Card"
+                android:text="Card Number"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
