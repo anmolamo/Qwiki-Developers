@@ -58,14 +58,12 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="350dp"
-
-                android:layout_height="wrap_content"
+                android:layout_height="160dp"
                 android:layout_marginStart="15.4dp"
                 android:layout_margin="10dp"
-
                 android:layout_marginBottom="60dp"
                 android:elevation="0dp"
-                app:cardCornerRadius="9dp"
+                app:cardCornerRadius="30dp"
                 app:cardElevation="0dp">
 
                 <LinearLayout
@@ -81,7 +79,7 @@
                         android:layout_marginLeft="15.4dp"
                         android:text="Shop Name"
                         android:layout_marginTop="15.4dp"
-                        android:id="@+id/shopNameCard"
+                        android:id="@+id/shopNameCard1"
                         android:textColor="#000000"
                         android:textStyle="bold"
                         android:textSize="25dp" />
@@ -119,13 +117,13 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="350dp"
 
-                android:layout_height="wrap_content"
+                android:layout_height="160dp"
                 android:layout_marginStart="15.4dp"
                 android:layout_margin="10dp"
 
                 android:layout_marginBottom="60dp"
                 android:elevation="0dp"
-                app:cardCornerRadius="9dp"
+                app:cardCornerRadius="30dp"
                 app:cardElevation="0dp">
 
                 <LinearLayout
@@ -141,7 +139,7 @@
                         android:layout_marginLeft="15.4dp"
                         android:text="Shop Name"
                         android:layout_marginTop="15.4dp"
-                        android:id="@+id/shopNameCard"
+                        android:id="@+id/shopNameCard2"
                         android:textColor="#000000"
                         android:textStyle="bold"
                         android:textSize="25dp" />
@@ -178,13 +176,13 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="350dp"
 
-                android:layout_height="wrap_content"
+                android:layout_height="160dp"
                 android:layout_marginStart="15.4dp"
                 android:layout_margin="10dp"
 
                 android:layout_marginBottom="60dp"
                 android:elevation="0dp"
-                app:cardCornerRadius="9dp"
+                app:cardCornerRadius="30dp"
                 app:cardElevation="0dp">
 
                 <LinearLayout
@@ -200,7 +198,7 @@
                         android:layout_marginLeft="15.4dp"
                         android:text="Shop Name"
                         android:layout_marginTop="15.4dp"
-                        android:id="@+id/shopNameCard"
+                        android:id="@+id/shopNameCard3"
                         android:textColor="#000000"
                         android:textStyle="bold"
                         android:textSize="25dp" />
@@ -233,7 +231,49 @@
                 </LinearLayout>
 
 
+
             </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+
+                android:layout_height="160dp"
+                android:layout_marginStart="15.4dp"
+                android:layout_margin="10dp"
+
+                android:layout_marginBottom="60dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View More >"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="15.4dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="25dp" />
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
 
 
 
