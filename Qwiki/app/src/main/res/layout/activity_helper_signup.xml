@@ -10,7 +10,7 @@
         android:id="@+id/registtexthelper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="8dp"
         android:text="Sign Up"
         android:textSize="48dp"
@@ -143,5 +143,14 @@
         android:textSize="30dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/signInnewUser" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#68E16D"
+        android:text="Next"
+        android:textAllCaps="false" />
 
 </RelativeLayout>
