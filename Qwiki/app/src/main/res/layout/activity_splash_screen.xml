@@ -9,10 +9,10 @@
     tools:context=".splashScreen">
 
 
-<pl.droidsonroids.gif.GifImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:src="@drawable/qwikigif"/>
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/qwikigif" />
 
 </RelativeLayout>

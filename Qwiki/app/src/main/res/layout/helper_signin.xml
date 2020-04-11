@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserLogin">
+    tools:context=".HelperSignin">
+
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
@@ -13,12 +14,10 @@
         android:layout_marginLeft="30dp"
 
         android:background="#F9F9F9"
-        android:src="@drawable/usericon" />
-
-
+        android:src="@drawable/helpericon" />
 
     <TextView
-        android:id="@+id/imageView"
+        android:id="@+id/signintext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -36,12 +35,12 @@
 
 
     <EditText
-        android:id="@+id/edittext1"
+        android:id="@+id/emailHelper"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:drawableLeft="@drawable/user1"
         android:hint="  Enter Email Address"
-        android:layout_below="@id/imageView"
+        android:layout_below="@id/signintext"
         android:layout_marginTop="60dp"
         android:background="@drawable/userpassback"
         android:inputType="textEmailAddress"
@@ -54,13 +53,13 @@
         app:layout_constraintVertical_bias="0.419" />
 
     <RelativeLayout
-        android:layout_below="@+id/edittext1"
+        android:layout_below="@+id/emailHelper"
         android:layout_width="match_parent"
-        android:id="@+id/passwordContainer"
+        android:id="@+id/passwordContainerHelper"
         android:layout_height="wrap_content" >
 
         <EditText
-            android:id="@+id/edittext2"
+            android:id="@+id/passwordHelper"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:drawableLeft="@drawable/lock"
@@ -75,14 +74,14 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.548" />
 
-     <ImageButton
-         android:layout_width="30dp"
-         android:layout_centerVertical="true"
-         android:layout_height="30dp"
-         android:layout_alignParentRight="true"
-         android:layout_marginRight="35dp"
-         android:paddingTop="10dp"
-         android:background="@drawable/questionmar"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/questionmar"/>
 
     </RelativeLayout>
 
@@ -106,9 +105,9 @@
     <com.google.android.gms.common.SignInButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sign_in_button"
+        android:id="@+id/sign_in_button_helper"
         android:layout_marginLeft="20dp"
-        android:layout_below="@id/button3"
+        android:layout_below="@id/loginHelper"
         android:layout_marginRight="20dp"
         android:layout_marginTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -118,14 +117,14 @@
 
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/loginHelper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
         android:textSize="25dp"
         android:textAllCaps="false"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/passwordContainer"
+        android:layout_below="@id/passwordContainerHelper"
         android:layout_marginTop="20dp"
         android:background="@drawable/lgbtnback"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -133,5 +132,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.723" />
+
+
 
 </RelativeLayout>

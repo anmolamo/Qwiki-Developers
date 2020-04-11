@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelperSignup">
+
+    <TextView
+        android:id="@+id/registtexthelper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp"
+        android:text="Sign Up"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:textColor="#98989c" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="  Name "
+        android:layout_below="@id/registtexthelper"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="30dp"
+        android:background="@drawable/userpassback"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/useremail"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:drawableLeft="@drawable/user1"
+        android:hint="  Email Address "
+        android:layout_below="@id/username"
+        android:paddingLeft="30dp"
+        android:background="@drawable/userpassback"
+        android:inputType="textEmailAddress" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/useremail"
+        android:id="@+id/verifybox"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/userphone"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="  Phone Number "
+            android:paddingLeft="30dp"
+            android:background="@drawable/userpassback"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/lgbtnback"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="false"
+            android:text="verify"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/verifyPhone" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/otpverifiedback"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="false"
+            android:text="verify"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/otpverified" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/sentotpback"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="false"
+            android:text="verify"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/sentotp" />
+
+
+
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/userotp"
+        android:layout_width="250dp"
+        android:layout_below="@+id/verifybox"
+        android:layout_height="100dp"
+        android:hint="  Enter OTP "
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="30dp"
+        android:background="@drawable/userpassback"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/mainPassUser"
+        android:layout_width="match_parent"
+        android:background="@drawable/userpassback"
+        android:drawableLeft="@drawable/lock"
+        android:paddingLeft="30dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="   Password"
+        android:layout_below="@id/userotp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/verifyPassUser"
+        android:layout_width="match_parent"
+        android:background="@drawable/userpassback"
+        android:drawableLeft="@drawable/lock"
+        android:paddingLeft="30dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="   Re-Enter Password"
+        android:layout_below="@id/mainPassUser"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verifyPassUser"
+        android:background="@drawable/lgbtnback"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signInnewUser" />
+
+</RelativeLayout>
