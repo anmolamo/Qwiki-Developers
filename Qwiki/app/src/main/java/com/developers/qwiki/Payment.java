@@ -1,4 +1,4 @@
-package com.developers.qwiki;
+/*package com.developers.qwiki;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -89,4 +89,4 @@ public class Payment extends AppCompatActivity implements PaymentResultListener 
         }
 
     }
-}
+}*/

@@ -38,7 +38,7 @@
     <EditText
         android:id="@+id/edittext1"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:drawableLeft="@drawable/user1"
         android:hint="  Enter Email Address"
         android:layout_below="@id/imageView"
@@ -48,6 +48,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:paddingLeft="35dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -56,13 +58,16 @@
     <RelativeLayout
         android:layout_below="@+id/edittext1"
         android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/passwordContainer"
         android:layout_height="wrap_content" >
 
         <EditText
             android:id="@+id/edittext2"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:drawableLeft="@drawable/lock"
             android:hint="   Enter Password"
             android:paddingLeft="35dp"
