@@ -1,4 +1,4 @@
-package com.kwiki;
+package com.developers.qwiki;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -47,7 +47,6 @@ public class UserLogin extends AppCompatActivity {
 
         e1 = (EditText) findViewById(R.id.edittext1);
         e2= (EditText) findViewById(R.id.edittext2);
-
         tv1= (TextView) findViewById(R.id.textView2);
 
         auth=FirebaseAuth.getInstance();
@@ -98,8 +97,8 @@ public class UserLogin extends AppCompatActivity {
         tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(UserLogin.this,Signup.class);
-                startActivity(i);
+               // Intent i=new Intent(UserLogin.this,Signup.class);
+                //startActivity(i);
             }
         });
 
