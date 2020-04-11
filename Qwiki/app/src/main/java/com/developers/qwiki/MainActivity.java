@@ -1,4 +1,4 @@
-package com.kwiki;
+package com.developers.qwiki;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.developers.qwiki.R;
+import com.developers.qwiki.UserLogin;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(MainActivity.this,UserLogin.class);
+                Intent i=new Intent(MainActivity.this, UserLogin.class);
                 startActivity(i);
             }
         });
