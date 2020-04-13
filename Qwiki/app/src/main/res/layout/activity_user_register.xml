@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/registtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Sign Up"
+        android:textColor="#98989c"
+        android:textSize="48dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registtext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/userpassback"
+        android:hint="  Name "
+        android:inputType="textEmailAddress"
+        android:paddingLeft="30dp" />
+
+    <EditText
+        android:id="@+id/useremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/userpassback"
+        android:drawableLeft="@drawable/user1"
+        android:hint="  Email Address "
+        android:inputType="textEmailAddress"
+        android:paddingLeft="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/useremail"
+        android:id="@+id/verifybox"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/userphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  Phone Number "
+            android:paddingLeft="30dp"
+            android:background="@drawable/userpassback"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/lgbtnback"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="false"
+            android:text="verify"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/verifyPhone" />
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/userotp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verifybox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/userpassback"
+        android:hint="  Enter OTP "
+        android:inputType="textEmailAddress"
+        android:paddingLeft="30dp" />
+
+    <EditText
+        android:id="@+id/mainPassUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userotp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/userpassback"
+        android:drawableLeft="@drawable/lock"
+        android:ems="10"
+        android:hint="   Password"
+        android:inputType="textPassword"
+        android:paddingLeft="30dp" />
+
+    <EditText
+        android:id="@+id/verifyPassUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainPassUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/userpassback"
+        android:drawableLeft="@drawable/lock"
+        android:ems="10"
+        android:hint="   Re-Enter Password"
+        android:inputType="textPassword"
+        android:paddingLeft="30dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbx"
+        android:text="Accept Terms and Conditions"
+        android:layout_below="@+id/verifyPassUser"></CheckBox>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbx"
+        android:background="@drawable/lgbtnback"
+        android:text="Register"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signInnewUser" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
