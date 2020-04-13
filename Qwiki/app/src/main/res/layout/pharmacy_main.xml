@@ -285,7 +285,7 @@
                         android:layout_height="50dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="20dp"
-                        android:buttonTint="#FFFFFF"
+                        android:buttonTint="#CDDC39"
                         android:thumbTint="#FFFFFF" />
 
                     <TextView

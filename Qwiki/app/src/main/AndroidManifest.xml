@@ -9,7 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".pharmacyMain"></activity>
+        <activity android:name=".pharmacyViewOrder"></activity>
+        <activity android:name=".pharmacyListItems" />
+        <activity android:name=".pharmacyUpdateCoupon" />
+        <activity android:name=".pharmacyUpdateItem" />
+        <activity android:name=".pharmacyList" />
+        <activity android:name=".shopLists" />
+        <activity android:name=".shopUpdateItems" />
+        <activity android:name=".shopUpdateCoupon" />
+        <activity android:name=".shopListItems" />
+        <activity android:name=".hospitalBookAppointment" />
+        <activity android:name=".hospitalList" />
+        <activity android:name=".shopViewOrder" />
+        <activity android:name=".hospitalViewAppointment" />
+        <activity android:name=".patientInfo" />
+        <activity android:name=".HelperSignup" />
         <activity android:name=".groceryMain" />
         <activity android:name=".doctorMain" />
         <activity android:name=".HelperDocVerify" />
@@ -20,7 +34,7 @@
         <activity android:name=".shopInfoReview" />
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".HelperSignup"
+            android:name=".pharmacyMain"
             android:theme="@style/AppTheme1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
