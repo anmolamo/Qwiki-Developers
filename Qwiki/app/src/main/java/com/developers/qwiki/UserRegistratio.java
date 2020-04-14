@@ -1,4 +1,4 @@
-package com.e.helperregistration;
+package com.e.userregistration;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,7 +25,7 @@ import com.google.firebase.auth.PhoneAuthProvider;
 
 import java.util.concurrent.TimeUnit;
 
-public class HelperSignup extends AppCompatActivity {
+public class UserRegistratio extends AppCompatActivity {
 
     EditText e1,e2,e3,e4,e5,e6;
     Button b1,b2;
@@ -41,19 +41,19 @@ public class HelperSignup extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_helper_signup);
+        setContentView(R.layout.activity_user_register);
 
-        e1=findViewById(R.id.husername);
-        e2=findViewById(R.id.huseremail);
-        e3=findViewById(R.id.huserphone);
-        e4=findViewById(R.id.huserotp);
-        e5=findViewById(R.id.hmainPassUser);
-        e6=findViewById(R.id.hverifyPassUser);
+        e1=findViewById(R.id.username);
+        e2=findViewById(R.id.useremail);
+        e3=findViewById(R.id.userphone);
+        e4=findViewById(R.id.userotp);
+        e5=findViewById(R.id.mainPassUser);
+        e6=findViewById(R.id.verifyPassUser);
 
-        b1=findViewById(R.id.hverifyPhone);
-        b2=findViewById(R.id.hsignInnewUser);
+        b1=findViewById(R.id.verifyPhone);
+        b2=findViewById(R.id.signInnewUser);
 
-        cb=findViewById(R.id.hcheckbx);
+        cb=findViewById(R.id.checkbx);
 
         auth= FirebaseAuth.getInstance();
 
@@ -140,7 +140,7 @@ public class HelperSignup extends AppCompatActivity {
                                     public void onSuccess(AuthResult authResult) {
                                         Toast.makeText(getApplicationContext(), "Registration Sucessful", Toast.LENGTH_SHORT).show();
 
-                                        Intent i=new Intent(getApplicationContext(),HelperDocVerify.class);
+                                        Intent i=new Intent(getApplicationContext(),UserLogin.class);
                                         startActivity(i);
                                     }
                                 }).addOnFailureListener(new OnFailureListener() {
@@ -155,6 +155,7 @@ public class HelperSignup extends AppCompatActivity {
                 }
             }
         });
+
     }
 
     private void verifyPhoneNumberWithCode()
