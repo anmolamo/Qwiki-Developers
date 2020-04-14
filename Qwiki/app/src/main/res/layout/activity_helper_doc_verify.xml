@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelperDocVerify">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        android:id="@+id/verifyTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Document"
+        android:textSize="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/verifyTextView"
+        android:layout_marginTop="50dp"
+        android:id="@+id/doctext"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_below="@+id/doctext"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:id="@+id/doc"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doc"
+        android:id="@+id/docNumber"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image1"
+            android:src="@drawable/ic_add"
+            android:paddingLeft="30dp"></ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_add"
+            android:paddingLeft="30dp"></ImageView>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/userpassback"
+        android:hint="   Adhaar Number"
+        android:paddingLeft="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/adhaarNum"
+        android:layout_below="@id/docNumber"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Services"
+        android:textSize="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/adhaarNum"
+        android:id="@+id/serviceText"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_below="@+id/serviceText"
+        android:layout_height="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/services"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/services"
+        android:id="@+id/select"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_tick"
+        android:textAllCaps="false"
+        android:textSize="30dp"/>
+
+
+</RelativeLayout>
